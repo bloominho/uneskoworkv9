@@ -1,13 +1,102 @@
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LINESeedKR-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LINESeedKR-Th";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* TEXT */
+.title-font {
+  font-family: "LINESeedKR-Bd" !important;
+  font-weight: 400 !important;
+}
+
+.body-font {
+  font-family: "LINESeedKR-Rg" !important;
+  font-weight: 100 !important;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  max-width: 600px;
+  padding: 100px 30px 30px 30px;
+  font-family: "Gmarket Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.outer {
+  max-width: 600px;
+}
+
+.text-button {
+  cursor: grab;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#header {
+  background-color: rgb(255, 255, 255);
+}
+
+.inline-icon-center {
+  vertical-align: center;
+}
+
+.inline-icon {
+  vertical-align: bottom;
+}
+
+#headerCard {
+  background-color: rgb(242, 241, 236);
+}
+
+.material-symbols-filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24 !important;
+}
+
+.dark-hover {
+  color: rgb(73, 80, 87);
+  fill: rgb(73, 80, 87);
+  cursor: grab;
+}
+
+.dark-hover:hover {
+  color: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
+  cursor: grab;
+}
+
+.dark-hover-green {
+  color: rgb(1, 109, 11);
+  cursor: grab;
+}
+
+.dark-hover-green:hover {
+  color: rgb(0, 193, 19);
+  cursor: grab;
 }
